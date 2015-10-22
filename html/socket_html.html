@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        window.onload = function () {
+            var socket = io.connect();
+
+            socket.on('serverMessage',function(data){
+                alert(data);
+            });
+
+            document.getElementById('button').onclick = function () {
+                var text = document.getElementById('text').value;
+                socket.emit('clientMessage', text);
+            };
+        };
+
+        function enterClick(){
+                            var text = document.getElementById('text').value;
+                socket.emit('serverMessage', text);
+        }
+    </script>
+    <title></title>
+</head>
+<body>
+        <input type="text" id="text" onkeydown="javascript:if(event.keyCode == 13)enterClick();" />
+        <input type="button" id="button" value="echo"/>
+</body>
+</html>

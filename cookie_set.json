@@ -1,0 +1,12 @@
+{
+	"remember_cookie" : {
+		"key" : "auto_login_cookie",
+		"value" : "remember_me_cookie"
+	},
+
+	"session_cookie" : {
+		"key" : "sessionCookie",
+		"value" : "sessionUserCookie"
+	}
+
+}

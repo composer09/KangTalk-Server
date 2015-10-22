@@ -1,0 +1,21 @@
+{
+	"mongo_db" : {
+		"address" : "mongodb://localhost:27017/kangTalk",
+		"collection_list" : [
+			"user",
+			"message"
+		]
+	},
+
+	"web_server" : {
+		"port" : 50000
+	},
+
+	"socket_server" : {
+		"port" : 50001
+	},
+
+	"gcm_server" : {
+		"api" : "AIzaSyBlLfbkn6pmweVsDImr76bTOczjj11One4"
+	}
+}
