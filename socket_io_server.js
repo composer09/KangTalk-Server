@@ -55,7 +55,6 @@
     //     'left_user' : socket.username
     // });
 
-        //test
 
         });
 
